@@ -3,7 +3,7 @@ Databases with R
 
 ### posit::conf(2024)
 
-by INSTRUCTOR_NAME
+by Kirill Müller
 
 -----
 
