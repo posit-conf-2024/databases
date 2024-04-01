@@ -1,4 +1,4 @@
-WORKSHOP_TITLE
+Databases with R
 ================
 
 ### posit::conf(2024)
