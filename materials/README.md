@@ -59,23 +59,16 @@ Open RStudio and install the required R Packages:
 ```
 install.packages("pak")
 pak::pak("tidyverse")
-pak::pak("DBI")
-pak::pak("dbplyr")
+pak::pak("duckplyr")
 pak::pak("RSQLite")
 pak::pak("odbc")
 pak::pak("dm")
-pak::pak("duckdb")
-pak::pak("duckplyr")
 pak::pak("fs")
 pak::pak("withr")
-pak::pak("rlang")
-pak::pak("jsonlite")
 pak::pak("devtools")
 pak::pak("config")
-pak::pak("glue")
 pak::pak("pixarfilms")
 pak::pak("nycflights13")
-pak::pak("rstudioapi")
 ```
 
 #### Discord
