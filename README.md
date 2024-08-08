@@ -56,7 +56,7 @@ This course is for you if you:
 
 Open RStudio and install the required R Packages:
 
-```
+```r
 # Alternative: use pak::pak(...), see https://pak.r-lib.org/
 install.packages(
   c(
@@ -100,7 +100,7 @@ We will be using DuckDB for demonstration purposes, with selected exercises targ
 
 Run the following lines of code:
 
-```
+```r
 library(DBI)
 library(duckdb)
 duckdb_con <- dbConnect(duckdb())
