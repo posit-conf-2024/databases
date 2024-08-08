@@ -45,12 +45,12 @@ This course is for you if you:
 #### Laptop
 
 - We strongly recommend you to bring a laptop where you have permission to install software
-- If this is not possible, a cloud environment has been set up [INSERT POSIT CLOUD WORKSPACE LINK] with material and software already installed
+- If this is not possible, a cloud environment will be made available with material and software already installed
 
 #### R and RStudio IDE
 
 - Follow installation instructions [here](https://posit.co/download/rstudio-desktop/)
-- If you have R installed, make sure you have at least R (4.1.0)
+- If you have R installed, make sure you have at least R version 4.1.0
 
 #### R Packages Installation
 
