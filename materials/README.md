@@ -57,20 +57,27 @@ This course is for you if you:
 Open RStudio and install the required R Packages:
 
 ```
-install.packages("pak")
-pak::pak(
+# Alternative: use pak::pak(...), see https://pak.r-lib.org/
+install.packages(
   c(
     "tidyverse",
+    "devtools",
     "duckplyr",
     "RSQLite",
+    "RMariaDB",
+    "adbi",
     "odbc",
     "dm",
+    "pixarfilms",
+    "nycflights13",
     "fs",
     "withr",
-    "devtools",
     "config",
-    "pixarfilms",
-    "nycflights13"
+    "rstudioapi",
+    "brio",
+    "progress",
+    "DiagrammeR",
+    "DiagrammeRsvg"
   )
 )
 ```
