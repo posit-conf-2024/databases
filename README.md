@@ -123,15 +123,15 @@ We will provide a backup for you in case you don't have any.
 
 | Time          | Activity         |
 | :------------ | :--------------- |
-| 09:00 - 10:30 | One table        |
+| 09:00 - 10:30 | Talking to the database |
 | 10:30 - 11:00 | *Coffee break*   |
-| 11:00 - 12:30 | Multiple tables  |
+| 11:00 - 12:30 | Working with files |
 | 12:30 - 13:30 | *Lunch break*    |
-| 13:30 - 15:00 | DuckDB           |
+| 13:30 - 15:00 | Digging in deeper |
 | 15:00 - 15:30 | *Coffee break*   |
 | 15:30 - 17:00 | Exercises - Bring your own data |
 
-## Instructor(s)
+## Instructor
 
 [Kirill Müller](https://www.cynkra.com/about/) has been working on the boundary between data and computer science for more than 25 years. He has been awarded five R consortium projects to improve database connectivity and performance in R. Kirill is a core contributor to several tidyverse packages, including dplyr and tibble, and is currently working on duckplyr, the next iteration of dplyr that uses DuckDB as a backend. He holds a Ph.D. in Civil Engineering from ETH Zurich and is a founder and partner at cynkra.
 
