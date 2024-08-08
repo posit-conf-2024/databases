@@ -93,7 +93,7 @@ Discord will be our communication tool for the workshop.
 
 #### Database setup
 
-We will be using DuckDB and SQLite for demonstration purposes
+We will be using DuckDB for demonstration purposes, with selected exercises targeting a publicly accessible database server.
 
 
 #### Test your setup
@@ -104,16 +104,18 @@ Run the following lines of code:
 library(DBI)
 library(duckdb)
 duckdb_con <- dbConnect(duckdb())
-dbDisconnect(duckdb_con)
 
-library(RSQLite)
-sqlite_con <- dbConnect(SQLite(), ":memory:")
-dbDisconnect(sqlite_con)
+dbExecute(duckdb_con, "INSTALL httpfs")
+dbExecute(duckdb_con, "LOAD httpfs")
+dbExecute(duckdb_con, "INSTALL json")
+dbExecute(duckdb_con, "LOAD json")
+
+dbDisconnect(duckdb_con)
 ```
 
 #### Data
 
-**We invite you to bring your own data and/or databases** to experiment techniques during the last session on your own data. 
+**We invite you to bring your own data and/or databases** to experiment with techniques during the last session on your own data.
 
 We will provide a backup for you in case you don't have any.
 
