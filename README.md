@@ -62,7 +62,6 @@ install.packages(c(
   "tidyverse",
   "devtools",
   "duckplyr",
-  "RSQLite",
   "RMariaDB",
   "adbi",
   "dm",
@@ -73,6 +72,7 @@ install.packages(c(
   "progress",
   "DiagrammeR",
   "DiagrammeRsvg",
+  "arrow",
   "odbc"
 ))
 ```
