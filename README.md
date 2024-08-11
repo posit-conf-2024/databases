@@ -58,28 +58,23 @@ Open RStudio and install the required R Packages:
 
 ```r
 # Alternative: use pak::pak(...), see https://pak.r-lib.org/
-install.packages(
-  c(
-    "tidyverse",
-    "devtools",
-    "duckplyr",
-    "RSQLite",
-    "RMariaDB",
-    "adbi",
-    "odbc",
-    "dm",
-    "pixarfilms",
-    "nycflights13",
-    "fs",
-    "withr",
-    "config",
-    "rstudioapi",
-    "brio",
-    "progress",
-    "DiagrammeR",
-    "DiagrammeRsvg"
-  )
-)
+install.packages(c(
+  "tidyverse",
+  "devtools",
+  "duckplyr",
+  "RSQLite",
+  "RMariaDB",
+  "adbi",
+  "dm",
+  "pixarfilms",
+  "nycflights13",
+  "config",
+  "rstudioapi",
+  "progress",
+  "DiagrammeR",
+  "DiagrammeRsvg",
+  "odbc"
+))
 ```
 
 #### Discord
