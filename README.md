@@ -73,7 +73,8 @@ install.packages(c(
   "DiagrammeR",
   "DiagrammeRsvg",
   "arrow",
-  "odbc"
+  "odbc",
+  "parquetize"
 ))
 ```
 
