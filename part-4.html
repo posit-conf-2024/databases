@@ -360,6 +360,7 @@ pre {
 &lt;/style&gt;
 
 
+
 # Backup Lab - Instructions 1
 
 1. Analyze Venture Capital data!
@@ -370,12 +371,17 @@ pre {
 
 1. Familiarise yourself with the content and check-out the next slides providing more context on the data. Also a data dictionary can be found here: https://www.sec.gov/files/Form_D.pdf
 
+&lt;div class=&quot;script-number&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;100&quot; height=&quot;20&quot; role=&quot;img&quot; aria-label=&quot;Script: db_40.R&quot;&gt;&lt;title&gt;Script: db_40.R&lt;/title&gt;&lt;linearGradient id=&quot;s&quot; x2=&quot;0&quot; y2=&quot;100%&quot;&gt;&lt;stop offset=&quot;0&quot; stop-color=&quot;#bbb&quot; stop-opacity=&quot;.1&quot;/&gt;&lt;stop offset=&quot;1&quot; stop-opacity=&quot;.1&quot;/&gt;&lt;/linearGradient&gt;&lt;clipPath id=&quot;r&quot;&gt;&lt;rect width=&quot;100&quot; height=&quot;20&quot; rx=&quot;3&quot; fill=&quot;#fff&quot;/&gt;&lt;/clipPath&gt;&lt;g clip-path=&quot;url(#r)&quot;&gt;&lt;rect width=&quot;43&quot; height=&quot;20&quot; fill=&quot;#555&quot;/&gt;&lt;rect x=&quot;43&quot; width=&quot;57&quot; height=&quot;20&quot; fill=&quot;#fe7d37&quot;/&gt;&lt;rect width=&quot;100&quot; height=&quot;20&quot; fill=&quot;url(#s)&quot;/&gt;&lt;/g&gt;&lt;g fill=&quot;#fff&quot; text-anchor=&quot;middle&quot; font-family=&quot;Verdana,Geneva,DejaVu Sans,sans-serif&quot; text-rendering=&quot;geometricPrecision&quot; font-size=&quot;110&quot;&gt;&lt;text aria-hidden=&quot;true&quot; x=&quot;225&quot; y=&quot;150&quot; fill=&quot;#010101&quot; fill-opacity=&quot;.3&quot; transform=&quot;scale(.1)&quot; textLength=&quot;330&quot;&gt;Script&lt;/text&gt;&lt;text x=&quot;225&quot; y=&quot;140&quot; transform=&quot;scale(.1)&quot; fill=&quot;#fff&quot; textLength=&quot;330&quot;&gt;Script&lt;/text&gt;&lt;text aria-hidden=&quot;true&quot; x=&quot;705&quot; y=&quot;150&quot; fill=&quot;#010101&quot; fill-opacity=&quot;.3&quot; transform=&quot;scale(.1)&quot; textLength=&quot;470&quot;&gt;db_40.R&lt;/text&gt;&lt;text x=&quot;705&quot; y=&quot;140&quot; transform=&quot;scale(.1)&quot; fill=&quot;#fff&quot; textLength=&quot;470&quot;&gt;db_40.R&lt;/text&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/div&gt;
+
 ---
 
 # Backup Lab - Instructions 2
 
 1. Choose a quarter and read each tsv file into a persistent DuckDB. Create the following tables: `form_d`, `issuers`, `offering`, `recipients`
+
     - Hint: `duckdb::tbl_file()`
+
+&lt;div class=&quot;script-number&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;100&quot; height=&quot;20&quot; role=&quot;img&quot; aria-label=&quot;Script: db_40.R&quot;&gt;&lt;title&gt;Script: db_40.R&lt;/title&gt;&lt;linearGradient id=&quot;s&quot; x2=&quot;0&quot; y2=&quot;100%&quot;&gt;&lt;stop offset=&quot;0&quot; stop-color=&quot;#bbb&quot; stop-opacity=&quot;.1&quot;/&gt;&lt;stop offset=&quot;1&quot; stop-opacity=&quot;.1&quot;/&gt;&lt;/linearGradient&gt;&lt;clipPath id=&quot;r&quot;&gt;&lt;rect width=&quot;100&quot; height=&quot;20&quot; rx=&quot;3&quot; fill=&quot;#fff&quot;/&gt;&lt;/clipPath&gt;&lt;g clip-path=&quot;url(#r)&quot;&gt;&lt;rect width=&quot;43&quot; height=&quot;20&quot; fill=&quot;#555&quot;/&gt;&lt;rect x=&quot;43&quot; width=&quot;57&quot; height=&quot;20&quot; fill=&quot;#fe7d37&quot;/&gt;&lt;rect width=&quot;100&quot; height=&quot;20&quot; fill=&quot;url(#s)&quot;/&gt;&lt;/g&gt;&lt;g fill=&quot;#fff&quot; text-anchor=&quot;middle&quot; font-family=&quot;Verdana,Geneva,DejaVu Sans,sans-serif&quot; text-rendering=&quot;geometricPrecision&quot; font-size=&quot;110&quot;&gt;&lt;text aria-hidden=&quot;true&quot; x=&quot;225&quot; y=&quot;150&quot; fill=&quot;#010101&quot; fill-opacity=&quot;.3&quot; transform=&quot;scale(.1)&quot; textLength=&quot;330&quot;&gt;Script&lt;/text&gt;&lt;text x=&quot;225&quot; y=&quot;140&quot; transform=&quot;scale(.1)&quot; fill=&quot;#fff&quot; textLength=&quot;330&quot;&gt;Script&lt;/text&gt;&lt;text aria-hidden=&quot;true&quot; x=&quot;705&quot; y=&quot;150&quot; fill=&quot;#010101&quot; fill-opacity=&quot;.3&quot; transform=&quot;scale(.1)&quot; textLength=&quot;470&quot;&gt;db_40.R&lt;/text&gt;&lt;text x=&quot;705&quot; y=&quot;140&quot; transform=&quot;scale(.1)&quot; fill=&quot;#fff&quot; textLength=&quot;470&quot;&gt;db_40.R&lt;/text&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/div&gt;
 
 ---
 
@@ -394,6 +400,8 @@ pre {
     
     - Number of submissions per state
 
+&lt;div class=&quot;script-number&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;100&quot; height=&quot;20&quot; role=&quot;img&quot; aria-label=&quot;Script: db_40.R&quot;&gt;&lt;title&gt;Script: db_40.R&lt;/title&gt;&lt;linearGradient id=&quot;s&quot; x2=&quot;0&quot; y2=&quot;100%&quot;&gt;&lt;stop offset=&quot;0&quot; stop-color=&quot;#bbb&quot; stop-opacity=&quot;.1&quot;/&gt;&lt;stop offset=&quot;1&quot; stop-opacity=&quot;.1&quot;/&gt;&lt;/linearGradient&gt;&lt;clipPath id=&quot;r&quot;&gt;&lt;rect width=&quot;100&quot; height=&quot;20&quot; rx=&quot;3&quot; fill=&quot;#fff&quot;/&gt;&lt;/clipPath&gt;&lt;g clip-path=&quot;url(#r)&quot;&gt;&lt;rect width=&quot;43&quot; height=&quot;20&quot; fill=&quot;#555&quot;/&gt;&lt;rect x=&quot;43&quot; width=&quot;57&quot; height=&quot;20&quot; fill=&quot;#fe7d37&quot;/&gt;&lt;rect width=&quot;100&quot; height=&quot;20&quot; fill=&quot;url(#s)&quot;/&gt;&lt;/g&gt;&lt;g fill=&quot;#fff&quot; text-anchor=&quot;middle&quot; font-family=&quot;Verdana,Geneva,DejaVu Sans,sans-serif&quot; text-rendering=&quot;geometricPrecision&quot; font-size=&quot;110&quot;&gt;&lt;text aria-hidden=&quot;true&quot; x=&quot;225&quot; y=&quot;150&quot; fill=&quot;#010101&quot; fill-opacity=&quot;.3&quot; transform=&quot;scale(.1)&quot; textLength=&quot;330&quot;&gt;Script&lt;/text&gt;&lt;text x=&quot;225&quot; y=&quot;140&quot; transform=&quot;scale(.1)&quot; fill=&quot;#fff&quot; textLength=&quot;330&quot;&gt;Script&lt;/text&gt;&lt;text aria-hidden=&quot;true&quot; x=&quot;705&quot; y=&quot;150&quot; fill=&quot;#010101&quot; fill-opacity=&quot;.3&quot; transform=&quot;scale(.1)&quot; textLength=&quot;470&quot;&gt;db_40.R&lt;/text&gt;&lt;text x=&quot;705&quot; y=&quot;140&quot; transform=&quot;scale(.1)&quot; fill=&quot;#fff&quot; textLength=&quot;470&quot;&gt;db_40.R&lt;/text&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/div&gt;
+
 ---
 
 # Backup Lab - Instructions 4
@@ -405,6 +413,8 @@ pre {
 1. Load all the files for each quarter available and create a dm for the full set of data
 
 1. Repeat the analysis for the full set of data for &quot;New York&quot;, &quot;California&quot; and &quot;Texas&quot; (when applicable)
+
+&lt;div class=&quot;script-number&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; width=&quot;100&quot; height=&quot;20&quot; role=&quot;img&quot; aria-label=&quot;Script: db_40.R&quot;&gt;&lt;title&gt;Script: db_40.R&lt;/title&gt;&lt;linearGradient id=&quot;s&quot; x2=&quot;0&quot; y2=&quot;100%&quot;&gt;&lt;stop offset=&quot;0&quot; stop-color=&quot;#bbb&quot; stop-opacity=&quot;.1&quot;/&gt;&lt;stop offset=&quot;1&quot; stop-opacity=&quot;.1&quot;/&gt;&lt;/linearGradient&gt;&lt;clipPath id=&quot;r&quot;&gt;&lt;rect width=&quot;100&quot; height=&quot;20&quot; rx=&quot;3&quot; fill=&quot;#fff&quot;/&gt;&lt;/clipPath&gt;&lt;g clip-path=&quot;url(#r)&quot;&gt;&lt;rect width=&quot;43&quot; height=&quot;20&quot; fill=&quot;#555&quot;/&gt;&lt;rect x=&quot;43&quot; width=&quot;57&quot; height=&quot;20&quot; fill=&quot;#fe7d37&quot;/&gt;&lt;rect width=&quot;100&quot; height=&quot;20&quot; fill=&quot;url(#s)&quot;/&gt;&lt;/g&gt;&lt;g fill=&quot;#fff&quot; text-anchor=&quot;middle&quot; font-family=&quot;Verdana,Geneva,DejaVu Sans,sans-serif&quot; text-rendering=&quot;geometricPrecision&quot; font-size=&quot;110&quot;&gt;&lt;text aria-hidden=&quot;true&quot; x=&quot;225&quot; y=&quot;150&quot; fill=&quot;#010101&quot; fill-opacity=&quot;.3&quot; transform=&quot;scale(.1)&quot; textLength=&quot;330&quot;&gt;Script&lt;/text&gt;&lt;text x=&quot;225&quot; y=&quot;140&quot; transform=&quot;scale(.1)&quot; fill=&quot;#fff&quot; textLength=&quot;330&quot;&gt;Script&lt;/text&gt;&lt;text aria-hidden=&quot;true&quot; x=&quot;705&quot; y=&quot;150&quot; fill=&quot;#010101&quot; fill-opacity=&quot;.3&quot; transform=&quot;scale(.1)&quot; textLength=&quot;470&quot;&gt;db_40.R&lt;/text&gt;&lt;text x=&quot;705&quot; y=&quot;140&quot; transform=&quot;scale(.1)&quot; fill=&quot;#fff&quot; textLength=&quot;470&quot;&gt;db_40.R&lt;/text&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/div&gt;
 
 ---
 
